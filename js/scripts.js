@@ -1,7 +1,7 @@
 $(document).ready(function () {
-  $("#example-form").submit(function (event) {
-    event.preventDefault();
 
+  $("#example-form").submit(function (event) {
+    
     let question1val = $("#question1").val()
     let question2val = $("#question2").val() 
     let question3val = $("#question3").val()
@@ -12,10 +12,6 @@ $(document).ready(function () {
     let pythonPoints = 0;
     let cPoints = 0;
     let rubyPoints =0;
-
-    console.log("pythonPoints");
-    console.log("cPoints")
-    console.log("rubyPoints")
 
     if (question1val === "yes") {
       pythonPoints += 1;
@@ -53,13 +49,15 @@ $(document).ready(function () {
     if (pythonPoints >= 3) {
       $("#quiz-result").show()
       $("#quiz-result").text("You should learn Python!")
-    } else if (cPoints >= 3) {
+    } 
+    if (cPoints >= 3) {
       $("#quiz-result").show()
       $("#quiz-result").text("You should learn C#!")
-    } else if (rubyPoints >= 3) {
+    }
+    if (rubyPoints >= 3) {
       $("#quiz-result").show()
       $("#quiz-result").text("You should learn Ruby!")
     }
-    
+    event.preventDefault()
   });
 })
