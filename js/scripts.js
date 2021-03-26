@@ -1,5 +1,7 @@
 $(document).ready(function () {
   $("#example-form").submit(function (event) {
+    event.preventDefault();
+    
     let question1val = $("#question1").val()
     let question2val = $("#question2").val() 
     let question3val = $("#question3").val()
@@ -43,9 +45,17 @@ $(document).ready(function () {
     } else if (question6val === "tea") {
       pythonPoints +=1;
     }
-    
-    
-    
-    event.preventDefault()
 
-
+    if (pythonPoints >= 3) {
+      $("#quiz-result").show()
+      $("#quiz-result").text("You should learn Python!")
+    } else if (cPoints >= 3) {
+      $("#quiz-result").show()
+      $("#quiz-result").text("You should learn C#!")
+    } else if (rubyPoints >= 3) {
+      $("#quiz-result").show()
+      $("#quiz-result").text("You should learn Ruby!")
+    }
+    
+  });
+})
