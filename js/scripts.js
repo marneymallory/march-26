@@ -1,7 +1,7 @@
 $(document).ready(function () {
   $("#example-form").submit(function (event) {
     event.preventDefault();
-    
+
     let question1val = $("#question1").val()
     let question2val = $("#question2").val() 
     let question3val = $("#question3").val()
@@ -41,9 +41,9 @@ $(document).ready(function () {
       pythonPoints += 1;
     }
     if (question6val === "coffee") {
-      rubyPoints +=1;
+      rubyPoints += 1;
     } else if (question6val === "tea") {
-      pythonPoints +=1;
+      pythonPoints += 1;
     }
 
     if (pythonPoints >= 3) {
