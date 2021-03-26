@@ -13,6 +13,10 @@ $(document).ready(function () {
     let cPoints = 0;
     let rubyPoints =0;
 
+    console.log("pythonPoints");
+    console.log("cPoints")
+    console.log("rubyPoints")
+
     if (question1val === "yes") {
       pythonPoints += 1;
      } else if (question1val === "no") {
