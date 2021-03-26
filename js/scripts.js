@@ -48,15 +48,13 @@ $(document).ready(function () {
 
     if (pythonPoints >= 3) {
       $("#quiz-result").show()
-      $("#quiz-result").text("You should learn Python!")
-    } 
-    if (cPoints >= 3) {
+      $("#quiz-result").text("You should learn Python!");
+    } else if (cPoints >= 3) {
       $("#quiz-result").show()
-      $("#quiz-result").text("You should learn C#!")
-    }
-    if (rubyPoints >= 3) {
+      $("#quiz-result").text("You should learn C#!");
+    } else if (rubyPoints >= 3) {
       $("#quiz-result").show()
-      $("#quiz-result").text("You should learn Ruby!")
+      $("#quiz-result").text("You should learn Ruby!");
     }
     event.preventDefault()
   });
