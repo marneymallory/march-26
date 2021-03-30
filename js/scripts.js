@@ -31,7 +31,9 @@ $(document).ready(function () {
     }
     if (question4val <= 21) {
       pythonPoints += 1; 
-    } else if (question4val >= 21) {
+    } else if (question4val = 21 - 30) {
+      rubyPoints += 1;
+    } else if (question4val >= 31) {
       cPoints += 1;
     }
     if (question5val === "yes") {
@@ -45,18 +47,19 @@ $(document).ready(function () {
       pythonPoints += 1;
     }
 
-    if (pythonPoints >= 3) {
-      $("#quiz-result").text("You should learn Python!");
-      $("#quiz-result").show()
-      $("#quiz").hide()
-    } else if (cPoints >= 3) {
-      $("#quiz-result").text("You should learn C#!");
-      $("#quiz-result").show()
-      $("#quiz").hide()
-    } else if (rubyPoints >= 3) {
+    if (rubyPoints = 4) {
       $("#quiz-result").text("You should learn Ruby!");
       $("#quiz-result").show()
       $("#quiz").hide()
+    } else if (pythonPoints = 5) {
+      $("#quiz-result").text("You should learn Python!");
+      $("#quiz-result").show()
+      $("#quiz").hide()
+    } else if (cPoints = 3) {
+      $("#quiz-result").text("You should learn C#!");
+      $("#quiz-result").show()
+      $("#quiz").hide()
+  
     }
 
     

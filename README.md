@@ -25,7 +25,7 @@ Open 'index.html' in Chrome or preferred browser
 To see my live website go to `https://marneymallory.github.io/march-26/)`
 
 ### Known Bugs:
-- unable to get form to submit
+- The only message that will load is "You should learn Ruby!"
 
 ### Support and contact details:
 Please reach out through my GitHub account.
